@@ -17,7 +17,7 @@ export const createPost = (postData) => dispatch => {
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
-            'content-type': 'application-json'
+            'content-type': 'application/json'
         },
         body: JSON.stringify(postData)
     })
